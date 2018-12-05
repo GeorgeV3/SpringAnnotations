@@ -9,5 +9,6 @@
 
    <context:annotation-config/>
    <context:component-scan base-package="cb.stereotype.*"></context:component-scan> 
+   <context:component-scan base-package="cb.autowiring.*"></context:component-scan> 
 	
 </beans>

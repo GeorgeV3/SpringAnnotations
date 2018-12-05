@@ -7,8 +7,14 @@
     http://www.springframework.org/schema/context 
     http://www.springframework.org/schema/context/spring-context.xsd">
 
-   <context:annotation-config/>
-   <context:component-scan base-package="cb.stereotype.*"></context:component-scan> 
-   <context:component-scan base-package="cb.autowiring.*"></context:component-scan> 
+    <context:annotation-config/>
+   	<context:component-scan base-package="cb.autowiring.*"></context:component-scan> 
+  
+   
+   	<bean id="address" class="cb.beans.Address" >
+		<property name="city_name" value="Faliro" />
+		<property name="build_no" value="33" />
+		<property name="pin_code" value="134353" />
+	</bean>
 	
 </beans>
